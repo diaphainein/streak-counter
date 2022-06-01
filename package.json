@@ -1,0 +1,36 @@
+{
+  "name": "@diaphainein/streak-counter",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diaphainein/streak-counter"
+  },
+  "author": "Lauren Cotto",
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/jsdom": "^16.2.14",
+    "jest": "^28.1.0",
+    "microbundle": "^0.15.0",
+    "ts-jest": "^28.0.3",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "jsdom": "^19.0.0"
+  }
+}
