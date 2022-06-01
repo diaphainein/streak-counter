@@ -73,7 +73,7 @@ describe("streakCounter", () => {
       const streak = streakCounter(mockLocalStorage, date);
 
       // Should match the dates used to set up the tests
-      expect(streak.startDate).toBe("12/11/2021");
+      expect(streak.startDate).toBe("12/12/2021");
     });
     it("should increment the streak", () => {
       // It should increment because this is the day after
